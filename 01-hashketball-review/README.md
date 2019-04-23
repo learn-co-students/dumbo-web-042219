@@ -1,5 +1,10 @@
 # Hashketball Review
 
+# Housekeeping
+* Lecture norms
+* Overview of the mod
+* Overview of the program
+
 ## Key Questions
 * What's cool about `rspec --fail-fast`?
 * How can I tell an array from a hash in ruby?

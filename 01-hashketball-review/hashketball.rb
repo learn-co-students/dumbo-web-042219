@@ -1,5 +1,17 @@
 require 'pry'
 
+# foo = nil #{}
+
+# def foo
+  
+# end
+
+# foo.each
+
+
+
+# puts foo
+
 def game_hash
   {
     home: {
@@ -119,24 +131,63 @@ def game_hash
   }
 end
 
+def get_players
+  game_hash[:away][:players] + game_hash[:home][:players] 
+end
 
-# # EXERCISE:
-# # Define a method that takes an array of instructors...
-# # Group 1: ...named get_names that returns just their names.
-# # Group 2: ...named get_hometowns that returns an array of just the instructors from Illinois.
-# # Group 3: ..named get_names that returns just the first instructor from Illinois.
+def find_player_by_name(player_name)
+  get_players.find do |player|
+    player[:player_name] == player_name
+  end
+end
+
+
+def num_points_scored(player_name)
+  find_player_by_name(player_name)[:points]
+end
+
+def shoe_size(player_name)
+  find_player_by_name(player_name)[:shoe]
+end
+
+
+# EXERCISE:
+# Define a method that takes an array of instructors...
+# Group 1: ...named get_names that returns just their names.
+# Group 2: ...named illinois_instructors that returns an array of just the hashes for instructors from Illinois.
+# Group 3: ...named get_names that returns just the first instructor hash from Illinois.
 
 # instructors = [
 #   {name: 'Graham', hometown: 'Oak Park, IL (outside of Chicago)', mood: 'excited'},
 #   {name: 'Helen', hometown: 'Chicago, IL', mood: 'sleepy' },
-#   {name: 'Dan', hometown: ''}
+#   {name: 'Dan', hometown: 'Winchester, MA', mood: 'present' }
 # ]
 
-# def method_name(instructor_array)
-
+# def get_names(instructor_array)
+#   instructor_names = instructor_array.map do |instructor|
+#     instructor[:name]
+#   end
+#   instructor_names
 # end
 
-# method_name(instructors)
+# def illinois_instructors(instructor_array)
+#   # il_instructors = []
+#   il_instructors = instructor_array.select do |instructor|
+#     instructor[:hometown].include? "IL"
+#   end
+#   il_instructors
+# end
+
+# def first_illinois_instructor(instructor_array)
+#   # il_instructors = []
+#   il_instructors = instructor_array.find do |instructor|
+#     instructor[:hometown].include? "IL"
+#   end
+#   il_instructors
+# end
+
+
+# get_names(instructors)
 
 
 # # EXERCISE
