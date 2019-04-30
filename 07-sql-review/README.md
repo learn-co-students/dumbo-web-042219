@@ -73,12 +73,24 @@ select * from artists join albums on albums.artist_id = artists.id
 
 ## BONUS (very hard)
 
-11. I want to return the names of the artists and their number of rock tracks
-    who play Rock music
-    and have move than 30 tracks
-    in order of the number of rock tracks that they have
-    from greatest to least
+11. I want to return 
+the names of the artists 
+and their number of rock tracks
+who play Rock music
+and have move than 30 tracks
+in order of the number of rock tracks that they have
+from greatest to least
 
 ```sql
+
+SELECT artists.name, count(tracks.id) as rock_tracks 
+from artists
+join albums on artists.id = albums.artist_id
+join tracks on tracks.album_id = albums.id
+where tracks.genre_id = 1
+group by artists.id
+having rock_tracks > 30
+order by rock_tracks DESC
+
 
 ```
