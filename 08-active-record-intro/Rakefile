@@ -1,0 +1,14 @@
+require_relative './config/environment'
+require 'sinatra/activerecord/rake'
+
+desc "Start our app console"
+task :console do
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+  Pry.start
+end
+
+desc "Print out some emojis to the console"
+task :emojis do
+  puts "🦕🦖" * 100
+end
+
