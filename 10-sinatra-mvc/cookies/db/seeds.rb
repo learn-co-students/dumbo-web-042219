@@ -1,0 +1,5 @@
+Cookie.create(name: "chocolate chip", size: "large", brand: "Kevin's Brand")
+Cookie.create(name: "Cookie Dough", size: "small", brand: "Kevin's Brand")
+Cookie.create(name: "Fig", size: "large", brand: "Pep Farm")
+Cookie.create(name: "Oatmeal Rasin", size: "large", brand: "Another One")
+Cookie.create(name: "Oreo Rasin", size: "large", brand: "cool")

@@ -1,0 +1,17 @@
+<h1><%= @test %></h1>
+
+<form>
+  <input type="text" name="q">
+  <input type="submit">
+</form>
+
+<ul>
+<% @cookies.each do |cookie| %>
+  <li>
+    <div><em>name:</em> <%= cookie.name %></div>
+    <div><em>size:</em> <%= cookie.size %></div>
+    <div><em>brand:</em> <%= cookie.brand %></div>
+    <div>---------------------</div>
+  </li>
+<% end %>
+</ul>
