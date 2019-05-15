@@ -11,21 +11,21 @@
 * Build out CRUD using sinatra
 
 # RESTful CRUD
-* Reading
-  * list
-  * show
-* Creating
-  * new
-    * form
-    * mass assignment
-  * post
-    * redirect
-* Updating
-  * edit
-    * form
-  * update
-  * one small caveat
-* Deleting
+* Reading ✅
+  * list ✅
+  * show ✅
+* Creating ✅
+  * new ✅
+    * form ✅
+    * mass assignment ✅
+  * post ✅
+    * redirect ✅
+* Updating ✅
+  * edit ✅
+    * form ✅
+  * update ✅
+  * one small caveat (nested params) ✅
+* Deleting ✅
 
 ## If we have time
-* Refactoring
+* Refactoring (partials ex. `_form.erb`)  ✅

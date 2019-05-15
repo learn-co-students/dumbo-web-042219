@@ -1,7 +1,8 @@
+<p><a href="/students/new">➕ 📚 Make a new student</a></p>
 <ul>
   <% @students.each do |student_obj| %>
   <li>
-    student id: <%= student_obj.id %> - <%= student_obj.name %>
+    <a href="students/<%= student_obj.id%>"><%= student_obj.name %></a>
   </li>
   <% end %>
 </ul>

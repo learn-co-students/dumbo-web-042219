@@ -1,3 +1,12 @@
 <h3>Hi! I'm <%= @student.name %>! Also, I'm <%= @student.age %> years old.</h3>
-<p>My favorite band is <%= @student.favorite_band %>!! They rock.</p>
-<p>Also, my favorite movie is <%= @student.favorite_movie %>. So good.</p>
+<div style="margin-top: 10px;">
+  <p>🎧 🎶 My favorite band is <strong><%= @student.favorite_band %></strong>!! They rock.</p>
+  <p>🎥 🍿 Also, my favorite movie is <strong><%= @student.favorite_movie %></strong>. So good.</p>
+</div>
+
+<a href="/students/<%= @student.id %>/edit">Edit <%= @student.name %></a>
+
+<form action="/students/<%= @student.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete <%= @student.name %>">
+</form>
