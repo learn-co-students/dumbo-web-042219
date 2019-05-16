@@ -1,0 +1,9 @@
+<h1><%= @band.name %> Band</h1>
+<h4>Students who are fans of <%= @band.name %></h4>
+<ul>
+  <% @band.students.each do |student| %>
+    <li>
+      <a href="/students/<%= student.id %>"><%= student.name %></a>
+    </li>
+  <% end %>
+</ul>
