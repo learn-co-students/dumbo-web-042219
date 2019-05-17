@@ -1,0 +1,2 @@
+class Potato < ApplicationRecord
+end

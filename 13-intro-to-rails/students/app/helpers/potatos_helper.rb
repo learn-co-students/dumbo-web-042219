@@ -1,0 +1,2 @@
+module PotatosHelper
+end
