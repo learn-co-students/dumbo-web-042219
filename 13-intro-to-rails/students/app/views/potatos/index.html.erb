@@ -1,9 +1,8 @@
 <h1>Hi</h1>
 <ul>
-  <% byebug %>
   <% @potatos.each do |potato| %>
   <li>
-    <%= potato.name %>
+    <%= link_to potato.name, potato_path(potato) %>
   </li>
   <% end %>
 </ul>
