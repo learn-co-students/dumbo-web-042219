@@ -1,0 +1,9 @@
+<h1>All Teachers</h1>
+<%= link_to "Create a teacher", new_teacher_path %>
+<ul>
+<% @teachers.each do |teacher| %>
+  <li>
+    <%= link_to teacher.name, teacher %> <%= button_to "Delete #{teacher.name}", teacher_path(teacher), method: :delete %>
+  </li>
+<% end %>
+</ul>
