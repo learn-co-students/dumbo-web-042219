@@ -1,0 +1,10 @@
+<%= form_for @exam do |f| %>
+  <%= f.label :grade %>
+  <%= f.number_field :grade %>
+  <%= f.label :teacher_id %>
+  <%= f.collection_select :teacher_id, Teacher.all, :id, :name %>
+  <%= f.label :student_id %>
+  <%= f.collection_select :student_id, Student.all, :id, :name %>
+
+  <%= f.submit %>
+<% end %>

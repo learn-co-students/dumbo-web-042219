@@ -1,0 +1,18 @@
+<h1>Teacher <%= @teacher.name %>'s Profile</h1>
+<ul>
+  <li>email: <%= @teacher.email %></li>
+</ul>
+
+<h2><%= @teacher.name %>'s students</h2>
+<ul>
+  <% @teacher.students.each do |student| %>
+  <li>
+    <%= link_to student.name, student %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "Edit #{@teacher.name}", edit_teacher_path(@teacher) %>
+<%= form_tag teacher_path(@teacher), method: "DELETE" do %>
+  <%= submit_tag "Delete yoself, #{@teacher.name}" %>
+<% end %>
