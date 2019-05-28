@@ -1,0 +1,15 @@
+<ul class="colors">
+  <% @colors.each do |color| %>
+  <li class="color" style="background-color: #<%= color.hex %>;">
+    #<%= color.hex %>
+    <span class="votes">Votes: <%= color.votes.length %>
+      <%= form_for [color, Vote.new], local: true do |f| %>
+      <button type="submit" class="<%= @can_vote ? "vote" : "nope" %>">
+        <span class="vote">🗳</span>
+        <span class="nope">🙅‍♀️</span>
+      </button>
+      <% end %>
+    </span>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite colors</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h2>Votes remaining: <%= @votes %></h2>
+    </header>
+    <% if @error %>
+      <ul class="errors">
+        <li><%= @error %></li>
+      </ul>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
