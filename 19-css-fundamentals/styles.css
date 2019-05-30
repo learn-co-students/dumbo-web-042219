@@ -1,0 +1,12 @@
+.greeting {
+  color: #af0155;
+  font-size: 20px;
+  display: inline-block;
+  width: 25%;
+  margin-right: -4px;
+  text-align: center;
+}
+div .hello {
+  color: red;
+  font-size: 40px;
+}

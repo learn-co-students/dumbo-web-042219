@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  message: MyString
+  favorited: false
+  hug_count: 1
+  photo_url: MyString
+
+two:
+  message: MyString
+  favorited: false
+  hug_count: 1
+  photo_url: MyString

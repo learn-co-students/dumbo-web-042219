@@ -1,0 +1,14 @@
+<div class="compliment-container">
+<% @compliments.each do |compliment| %>
+  <div class="compliment">
+    <div class="trash">🗑</div>
+    <div class="favorite">⭐️</div>
+    <img width="200" src="<%= compliment.photo_url %>">
+    <h3 class="compliment-message">"<%= compliment.message %>"</h3>
+    <div>
+      <cite>Hugged <%= compliment.hug_count %> times</cite>
+      <button>🤗 it</button>
+    </div>
+  </div>
+<% end %>
+</div>
