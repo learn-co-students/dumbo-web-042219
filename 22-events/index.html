@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Events</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <div id="comments">
+      <h3>Comments</h3>
+      <!-- HTML form will try to post -->
+      <form id='comment-form' data-key="comment">
+        <div class="field">
+          <input id='new-comment' type='text' name="commentInput"  placeholder='New Comment' />
+          <!-- giving our button the type of submit will cause it to tell the form to submit -->
+          <input type='submit' class='btn' value="Submit" />
+        </div>
+      </form>
+      <div id="comments-container">
+      </div>
+
+      <ul id="names">
+        <li>Dan</li>
+        <li>Michael</li>
+        <li>Wei</li>
+        <li>Andrew</li>
+        <li>Aaron</li>
+        <li>Miles</li>
+        <li>Loune</li>
+        <li>Adityo</li>
+        <li>Seb</li>
+        <li>Rishi</li>
+        <li>John</li>
+      </ul>
+
+      <div id="helicopter-parent">
+        <div>
+          <br>
+          <div>
+            <br>
+            <div>
+              <p id="hi">HI</p>
+              <div id="parent1">
+                <button id="alertBtn" class="btn" data-name="alert">Alert ME</button>
+                <button class="btn" data-name="log">Console Log something</button>
+                <button class="btn" data-name="error">Console Error</button>
+                <button class="btn">Random</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
