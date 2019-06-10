@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand|Holtwood+One+SC');
+
+body {
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Just Another Hand', cursive;
+  text-align: center;
+  background-color: #b0e0e6;
+}
+
+form {
+  width: 30vw;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: pink;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 36px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background: #d6efae;
+  color: black;
+  font-family: 'Just Another Hand', cursive;
+}
+
+input[type="submit"] {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 36px;
+  outline: none;
+  background: #d6efae;
+  border: 2px solid black;
+  white-space: normal;
+  font-family: 'Just Another Hand';
+}
+
+h1 {
+  font-family: 'Holtwood One SC', serif;
+  align-items: center;
+  font-size: 60px;
+  letter-spacing: 1vw;
+  background-color: pink;
+  margin: 0 0 50px 0;
+  padding: 20px 0;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+#main-container {
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#joke-list {
+  width: 50vw;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.username {
+  color: #f6546a;
+}
