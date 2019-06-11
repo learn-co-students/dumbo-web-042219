@@ -4,7 +4,7 @@
 
 function likeQuote(event){
 
-  const quoteId = parseInt(event.target.dataset.id)
+  const quoteId = parseInt(event.currentTarget.dataset.id)
 
   // here would be a place you could do optimistic rendering
   console.log("opti rendo")
