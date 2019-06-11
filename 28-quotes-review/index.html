@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="src/index.css">
+  <title>Motivation</title>
+</head>
+<body class='container center'>
+  <h1>My favorite quotes:</h1>
+  <div>
+    <ul id="quote-list">
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <form id="new-quote-form">
+      <div class="form-group">
+        <label for="new-quote">New Quote</label>
+        <input type="text" class="form-control" id="new-quote" placeholder="Learn. Love. Code.">
+      </div>
+      <div class="form-group">
+        <label for="Author">Author</label>
+        <input type="text" class="form-control" id="author" placeholder="Flatiron School">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>
