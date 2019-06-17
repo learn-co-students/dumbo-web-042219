@@ -1,0 +1,29 @@
+{
+  "spice-girls": [
+    {
+      "name": "Melanie Brown",
+      "shortName": "Mel B",
+      "adjective": "Scary"
+    },
+    {
+      "name": "Melanie Chisolm",
+      "shortName": "Mel C",
+      "adjective": "Sporty"
+    },
+    {
+      "name": "Geri Halliwell",
+      "shortName": "Geri",
+      "adjective": "Ginger"
+    },
+    {
+      "name": "Victoria Beckham (neé Adams)",
+      "shortName": "Victoria",
+      "adjective": "Posh"
+    },
+    {
+      "name": "Emma Bunton",
+      "shortName": "Emma",
+      "adjective": "Baby"
+    }
+  ]
+}
