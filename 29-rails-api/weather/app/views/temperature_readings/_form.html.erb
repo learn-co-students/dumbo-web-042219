@@ -1,0 +1,22 @@
+<%= form_with(model: temperature_reading, local: true) do |form| %>
+  <% if temperature_reading.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(temperature_reading.errors.count, "error") %> prohibited this temperature_reading from being saved:</h2>
+
+      <ul>
+      <% temperature_reading.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :temperature %>
+    <%= form.number_field :temperature %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

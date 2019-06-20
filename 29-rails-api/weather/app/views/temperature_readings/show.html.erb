@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Temperature:</strong>
+  <%= @temperature_reading.temperature %>
+</p>
+
+<%= link_to 'Edit', edit_temperature_reading_path(@temperature_reading) %> |
+<%= link_to 'Back', temperature_readings_path %>
