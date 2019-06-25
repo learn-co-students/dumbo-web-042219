@@ -1,4 +1,4 @@
-# React: Components, props, and children
+# React: Components and props
 
 ![Ott wireframe](wireframe.png)
 
