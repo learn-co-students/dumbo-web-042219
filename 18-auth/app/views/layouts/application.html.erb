@@ -11,13 +11,20 @@
 
   <body>
     <header>
-      <h2>Votes remaining: <%= @votes %></h2>
+      <h2>Votes remaining: <%= @remaining_votes %></h2>
+      <% if @logged_in_user %>
+        <%= @logged_in_user.username %>
+      <% end %>
+      <% if @errors %>
+        <ul class="errors">
+            <% @errors.each do |error| %>
+              <li>
+                <%= error %>
+              </li>
+            <% end %>
+        </ul>
+      <% end %>
     </header>
-    <% if @error %>
-      <ul class="errors">
-        <li><%= @error %></li>
-      </ul>
-    <% end %>
     <%= yield %>
   </body>
 </html>

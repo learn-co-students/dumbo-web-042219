@@ -176,3 +176,13 @@ form input[type=submit]:active {
   padding: 0;
   display: inline;
 }
+
+.mini-color {
+    /* margin: 0; */
+    padding: 20px;
+    width: 150px;
+    font-size: 32px;
+    display: inline-block;
+    margin: 20px;
+    background: #ffffff33;
+}

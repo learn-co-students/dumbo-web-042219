@@ -1,0 +1,18 @@
+<h1>LOGIN</h1>
+
+  <%= form_with url: sessions_path, local: true do |f| %>
+
+    <ul>
+      <li>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+      </li>
+      <li>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      </li>
+    </ul>
+
+    <%= f.submit "Log in" %>
+
+  <% end %>

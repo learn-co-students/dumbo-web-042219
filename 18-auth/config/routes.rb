@@ -4,5 +4,11 @@ Rails.application.routes.draw do
     resources :votes, only: [:create]
   end
 
+  resources :votes, only: [:index, :destroy]
+
+
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create]
+
   root "colors#index"
 end

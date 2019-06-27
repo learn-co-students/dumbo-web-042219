@@ -1,0 +1,19 @@
+{
+  "wallet": {
+    "balance": 20
+  },
+  "snacks": [
+    {
+      "id": 3,
+      "name": "squid",
+      "quantity": 3,
+      "price": 5.4
+    },
+    {
+      "id": 5,
+      "name": "shrimp",
+      "quantity": 3,
+      "price": 7
+    }
+  ]
+}

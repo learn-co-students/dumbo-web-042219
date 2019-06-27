@@ -1,0 +1,11 @@
+
+<% @votes.each do |vote| %>
+  <%= form_for vote, method: :delete, :html => {class: 'mini-color'} do |f| %>
+    <span style="color: #<%= vote.color.hex %>">#<%= vote.color.hex %></span>
+    <%= vote.user ? vote.user.username : "" %>
+    <% if vote.user == @logged_in_user %>
+    <%= f.submit "Delete" %>
+    <% end %>
+  <% end %>
+<% end %>
+

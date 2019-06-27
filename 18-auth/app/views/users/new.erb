@@ -1,0 +1,17 @@
+
+<h1>CREATE A NEW USER</h1>
+  <%= form_for @user do |f| %>
+
+    <ul>
+      <li>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+      </li>
+      <li>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      </li>
+    </ul>
+      <%= f.submit %>
+
+  <% end %>
