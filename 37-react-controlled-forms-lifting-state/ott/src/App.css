@@ -1,0 +1,82 @@
+body {
+  margin: auto;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: arial;
+}
+
+.grid-container {
+  width: 80vw;
+  background-color: white;
+  padding: 1rem;
+  /* border: 3px solid limegreen; */
+  margin: 3px;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 0.8fr;
+  grid-template-areas: "navigation_container messages_container";
+}
+
+.navigation_container {
+  grid-area: navigation_container;
+  /* border: 3px solid blue; */
+  margin: 3px;
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-areas: "navigation_profile" "navigation_channels_list";
+}
+
+.navigation_profile {
+  grid-area: navigation_profile;
+  /* border: 3px solid brown; */
+  margin: 3px;
+}
+
+.navigation_channels_list {
+  grid-area: navigation_channels_list;
+  /* border: 3px solid orange; */
+  margin: 3px;
+}
+
+.navigation_channels_list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.messages_container {
+  grid-area: messages_container;
+  border: 3px solid tan;
+  padding: 10px;
+  margin: 3px;
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: 0.3fr 2.3fr 0.4fr;
+  grid-template-areas: "messages_container_header" "messages_container_list" "messages_container_compose";
+}
+
+.messages_container_header { grid-area: messages_container_header; }
+
+.messages_container_list {
+  grid-area: messages_container_list;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.messages_container_compose { grid-area: messages_container_compose; }
+
+.user_img { width: 5rem; height: 5rem; }
+
+.message {
+  display: flex;
+  margin: 1rem;
+  /* border: 3px solid yellow; */
+  margin: 3px;
+}
+
+.message .user_img {
+  margin-right: 1rem;
+}
