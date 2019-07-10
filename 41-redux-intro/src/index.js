@@ -3,28 +3,63 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import logo from "./logo.svg";
 import "./App.css";
+import { createStore } from 'redux'
 
-class App extends Component {
-  state = {
-    count: 0
+
+const defaultState = { count: 0 }
+
+// console.log(createStore)
+const reducer = (state = defaultState, action) => {
+  console.log('state', state)
+  console.log('action', action)
+
+  switch (action.type) {
+    case 'INCREMENT_COUNT':
+      return { count: state.count + 1 }
+      break;
+
+    case 'DECREMENT_COUNT':
+      return { count: state.count - 1 }
+      break;
+
+    default:
+      return prevState
   }
 
+}
+
+// INCREMENT THE COUNT BY 3
+// INCREMENT THE COUNT BY 5
+// DECREMENT THE COUNT BY 3 
+// DECREMENT THE COUNT BY 5
+
+
+const store = createStore(reducer)
+
+debugger
+// redux to manage this; { count: 0 }
+
+class App extends Component {
+  // state = {
+  //   count: 0
+  // }
+
   increment = () => {
-    this.setState(prevState => ({ count: prevState.count + 1 }));
+    // this.setState(prevState => ({ count: prevState.count + 1 }));
   };
 
   decrement = () => {
-    this.setState(prevState => ({ count: prevState.count - 1 }));
+    // this.setState(prevState => ({ count: prevState.count - 1 }));
   };
 
   render() {
     return (
       <div className="App">
-        <Header count={this.state.count}/>
+        <Header count={null}/>
         <Counter
           increment={this.increment}
           decrement={this.decrement}
-          count={this.state.count}/>
+          count={null}/>
       </div>
     );
   }
