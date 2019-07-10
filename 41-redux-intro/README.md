@@ -9,8 +9,7 @@
 
 ## Explain Redux
 
-- TROY: Single source of truth when it comes to your state.
-- Rest of the class: No response.
+
 
 ## (Psst! Redux Terminology Cheatsheet)
 [Redux Terminology](https://gist.github.com/alexgriff/0e247dee73e9125177d9c04cec159cc6)
