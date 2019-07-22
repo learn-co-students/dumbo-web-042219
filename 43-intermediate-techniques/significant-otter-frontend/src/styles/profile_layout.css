@@ -1,0 +1,12 @@
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.3fr 2.8fr;
+  grid-template-areas: "header" "h1" "profile";
+  width: 20em;
+  height: 28em;
+}
+
+.profile-layout > header { grid-area: header; }
+.profile-layout > h1 { grid-area: h1; }
+.profile-layout > main { grid-area: profile; }

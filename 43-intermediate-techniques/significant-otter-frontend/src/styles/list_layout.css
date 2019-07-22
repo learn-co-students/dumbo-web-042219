@@ -1,0 +1,12 @@
+.list-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.3fr 2.5fr;
+  grid-template-areas: "header" "h1" "list";
+  width: 20em;
+  height: 28em;
+}
+
+.list-layout > header { grid-area: header; }
+.list-layout > h1 { grid-area: h1; }
+.list-layout > main { grid-area: list; }
